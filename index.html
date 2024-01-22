@@ -4,45 +4,33 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/goit-js-hw-12/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>hw-js-12</title>
+    <title>Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
     
     <script type="module" crossorigin src="/goit-js-hw-12/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-bad0427b.js">
-    <link rel="stylesheet" href="/goit-js-hw-12/assets/vendor-eb6030bc.css">
-    <link rel="stylesheet" href="/goit-js-hw-12/assets/index-27999791.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-c145bea9.js">
+    <link rel="stylesheet" href="/goit-js-hw-12/assets/vendor-fd638ea2.css">
+    <link rel="stylesheet" href="/goit-js-hw-12/assets/index-2a38095e.css">
   </head>
   <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-
-    <section>
-      <form class="form-search">
-      <div class="form-group">
-        <input type="text" class="form-input" placeholder="Search images..." />
-        <button type="submit" class="btn btn-search">Search</button></div>
+    <form class="form-search">
+      <input type="text" name="search" placeholder="Search images..." />
+      <button class="btn-search" type="submit">Search</button>
     </form>
-     <div class="loader-container">
-      <span class="loader"></span>
-    </div>
 
-    <ul class="gallery"></ul> 
-     <button
-      type="button"
-      class="btn btn-load-more "
-      data-action="load-more"
-    >Load more</button>
+    <div class="gallery-box">
+      <span class="loader-top"></span>
+      <ul class="gallery"></ul>
+    </div>
+    <div class="loader-bottom-box">
+      <span class="loader-bottom"> </span>
+      <button type="button" class="load-image">Load more</button>
+    </div>
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     
   </body>
